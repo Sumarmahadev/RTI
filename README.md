@@ -37,17 +37,17 @@ This system simplifies the process by:
 ---
 
 ##  Architecture
-                     User (Browser)
-                           ↓
-                     React Frontend (UI)
-                           ↓
-                     Flask API (Backend)
-                           ↓
-                     AI Logic (ai.py) 
-                           ↓
-                      PDF Generator 
-                           ↓
-                    Database (SQLite) 
+User (Browser)
+     ↓
+React Frontend (UI)
+     ↓
+Flask API (Backend)
+     ↓
+AI Logic (ai.py) 
+     ↓
+PDF Generator 
+     ↓
+Database (SQLite) 
 ----------------
 
 ##  Repository Structure
