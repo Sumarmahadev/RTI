@@ -133,15 +133,39 @@ AI is used in a controlled and structured manner:
 
 ##  How to Run
 
+## Installation and Setup
+
+1. Clone the repository
+
+```
+git clone https://github.com/Sumarmahadev/RTI/
+```
+
+2. Navigate to project folder
+
+```
+cd Fontend  
+
+```
+
+3. Install dependencies
+
+```
+npm install
+```
+
+4. Start the development server
+
+```
+npm run dev
+```
 ### Backend
 cd Task
 cd backend
 pip install -r requirements.txt
 python app.py
 
-#Fontend 
-cd Fontend 
-npm run rev 
+
 
 
 Conclusion
