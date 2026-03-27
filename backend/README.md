@@ -165,9 +165,10 @@ cd backend
 pip install -r requirements.txt
 python app.py
 
-
-
-
 Conclusion
 
 This project focuses on building a simple, reliable, and extensible system rather than a feature-heavy one, aligning with engineering best practices.
+
+## Author
+
+Developed by **[SUMAR CHIMACODE]**
