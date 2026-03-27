@@ -46,7 +46,7 @@ Output:
 
 ---
 
-## 🔍 Verification
+## Verification
 
 - Output is always in valid RTI format
 - Manual testing of generated PDF
@@ -73,6 +73,6 @@ Output:
 
 ---
 
-## 🧠 Conclusion
+## Conclusion
 
 This project demonstrates how AI can be used in a controlled and reliable way, prioritizing correctness over complexity.
