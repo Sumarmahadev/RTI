@@ -52,25 +52,32 @@ This system simplifies the process by:
 
 ##  Repository Structure
 
-src
+## 📁 Repository Structure
+
+```
+Task/
 │
-├── assets
+├── backend/
+│   ├── app.py              # Flask API entry point
+│   ├── ai.py               # RTI content generation logic
+│   ├── pdfgen.py           # PDF creation logic
+│   ├── rti.db              # SQLite database
+│   └── requirements.txt    # Python dependencies
 │
-├── components
-│   ├── StudentForm.jsx
-│   └── StudentTable.jsx
+├── frontend/
+│   ├── index.html          # Vite entry file
+│   ├── package.json        # Frontend dependencies
+│   ├── public/
+│   └── src/
+│       ├── assets/
+│       │   └── bg.png
+│       ├── App.jsx
+│       ├── main.jsx
+│       ├── App.css
+│       └── index.css
 │
-├── pages
-│   ├── Home.jsx
-│   ├── Login.jsx
-|   |-- Logout.jsx
-|   |-- Regitser.jsx
-│   ├── Dashboard.jsx
-│   ├── AddStudent.jsx
-│   └── StudentsList.jsx
-│
-├── App.jsx
-└── main.jsx
+└── README.md
+```
 
 ----------------
 
