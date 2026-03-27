@@ -59,19 +59,21 @@ Task/
 │ ├── ai.py # RTI content generation logic
 │ ├── pdfgen.py # PDF creation logic
 │ ├── rti.db # SQLite database
-│ └── requirements.txt 
+│ └── requirements.txt # Python dependencies
 │
 ├── frontend/
-│ ├── src/
-| | |──assets
-│ │ ├── App.js # Main React component
-│ │ ├── App.css 
-│ │ └── index.css # Tailwind / custom styles
-| | |── main.jsx
-│ ├── public/
-│ └── package.json # Frontend dependencies
+│ ├── index.html # Main HTML file (Vite entry)
+│ ├── package.json # Frontend dependencies
+│ ├── public/ # Static assets
+│ └── src/
+│ ├── assets/
+│ │ └── bg.png # Background image
+│ ├── App.jsx # Main React component
+│ ├── main.jsx # React entry point
+│ ├── App.css # Component styles
+│ └── index.css # Tailwind/global styles
 │
-└── README.md
+└── README.md # Project documentation
 
 ----------------
 
