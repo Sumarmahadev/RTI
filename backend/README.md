@@ -52,28 +52,25 @@ This system simplifies the process by:
 
 ##  Repository Structure
 
-Task/
+src
 │
-├── backend/
-│ ├── app.py # Flask API entry point
-│ ├── ai.py # RTI content generation logic
-│ ├── pdfgen.py # PDF creation logic
-│ ├── rti.db # SQLite database
-│ └── requirements.txt # Python dependencies
+├── assets
 │
-├── frontend/
-│ ├── index.html # Main HTML file (Vite entry)
-│ ├── package.json # Frontend dependencies
-│ ├── public/ # Static assets
-│ └── src/
-│ ├── assets/
-│ │ └── bg.png # Background image
-│ ├── App.jsx # Main React component
-│ ├── main.jsx # React entry point
-│ ├── App.css # Component styles
-│ └── index.css # Tailwind/global styles
+├── components
+│   ├── StudentForm.jsx
+│   └── StudentTable.jsx
 │
-└── README.md # Project documentation
+├── pages
+│   ├── Home.jsx
+│   ├── Login.jsx
+|   |-- Logout.jsx
+|   |-- Regitser.jsx
+│   ├── Dashboard.jsx
+│   ├── AddStudent.jsx
+│   └── StudentsList.jsx
+│
+├── App.jsx
+└── main.jsx
 
 ----------------
 
