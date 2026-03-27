@@ -1,145 +1,147 @@
-Mini RTI Generator (AI-Assisted)
+# Student Record Management System
 
-##  Overview
-This project is a simple full-stack application that helps users generate a properly formatted RTI (Right to Information) application without needing to know legal writing formats.
+## Project Overview
 
-Users can enter their issue in simple language, and the system converts it into a formal RTI letter and generates a downloadable PDF.
+This project is a **Student Record Management System** built using **React.js**.
+It allows users to **add, edit, delete, and view student records** in a table format.
+All CRUD operations are handled on the **frontend using React state**, without a backend.
 
----
-
-## Tech Stack
-
-- **Frontend:** React + Tailwind CSS
-- **Backend:** Flask (Python)
-- **Database:** SQLite (via SQLAlchemy)
-- **PDF Generation:** FPDF
-- **AI Logic:** Rule-based structured content generation (AI-assisted design)
+This project was developed as part of a **Full Stack Assignment – Students Table**.
 
 ---
 
-##  Problem Statement
+## Features
 
-Many citizens in India are unaware of how to properly draft RTI applications.  
-This leads to:
-- Incorrect formats
-- Rejected applications
-- Lack of access to government information
+### Student Table
+
+* Displays student records in a table
+* Columns include:
+
+  * Name
+  * Email
+  * Age
+  * Actions (Edit / Delete)
+
+### Add Student
+
+* Add new student records
+* Form validation includes:
+* All fields are mandatory
+* Email must be in valid format
+* Age must be greater than 0
+
+### Edit Student
+
+* Edit existing student details
+* Form is pre-filled with student data
+* Same validation rules apply
+
+### Delete Student
+
+* Students can be deleted
+* Includes confirmation dialog before deletion
+
+### Excel Export
+
+* Download the student list as an Excel file
+* Implemented using **xlsx** and **file-saver**
+
+### Simulated Loading
+
+* Displays a loading state before rendering the student table
 
 ---
 
-## Solution
+## Technologies Used
 
-This system simplifies the process by:
-- Taking user input in plain language
-- Structuring it into a formal RTI letter
-- Generating a clean PDF document
+* React.js
+* React Router
+* Tailwind CSS
+* JavaScript (ES6)
+* XLSX (Excel export)
+* File-Saver
 
 ---
 
-##  Architecture
-                     User (Browser)
-                           ↓
-                     React Frontend (UI)
-                           ↓
-                     Flask API (Backend)
-                           ↓
-                     AI Logic (ai.py) 
-                           ↓
-                      PDF Generator 
-                           ↓
-                    Database (SQLite) 
-----------------
+## Project Structure
 
-##  Repository Structure
-
-Task/
+```
+src
 │
-├── backend/
-│ ├── app.py # Flask API entry point
-│ ├── ai.py # RTI content generation logic
-│ ├── pdfgen.py # PDF creation logic
-│ ├── rti.db # SQLite database
-│ └── requirements.txt # Python dependencies
+├── assets
 │
-├── frontend/
-│ ├── index.html # Main HTML file (Vite entry)
-│ ├── package.json # Frontend dependencies
-│ ├── public/ # Static assets
-│ └── src/
-│ ├── assets/
-│ │ └── bg.png # Background image
-│ ├── App.jsx # Main React component
-│ ├── main.jsx # React entry point
-│ ├── App.css # Component styles
-│ └── index.css # Tailwind/global styles
+├── components
+│   ├── StudentForm.jsx
+│   └── StudentTable.jsx
 │
-└── README.md # Project documentation
-
-----------------
-
-##  Features
-
--  Generate RTI letter from simple input
--  Download as PDF
--  Store user requests in SQLite database
--  Modern UI (Tailwind + Glassmorphism)
--  Input validation
--  Simple and maintainable structure
-
-------------------
-
-##  AI Usage
-
-AI is used in a controlled and structured manner:
-
-- Converts user issue → formal RTI language
-- Ensures proper legal formatting
-- Applies consistent template structure
-
-> Note: This project simulates AI behavior and is designed to be easily extendable with real LLM APIs like Gemini or OpenAI.
+├── pages
+│   ├── Home.jsx
+│   ├── Login.jsx
+|   |-- Logout.jsx
+|   |-- Regitser.jsx
+│   ├── Dashboard.jsx
+│   ├── AddStudent.jsx
+│   └── StudentsList.jsx
+│
+├── App.jsx
+└── main.jsx
+```
 
 ---
 
-## Key Technical Decisions
+## Installation and Setup
 
-- **Flask over Django:** Lightweight and faster for small APIs  
-- **SQLite:** Simple and sufficient for MVP  
-- **Structured generation instead of raw AI:** Ensures correctness and avoids unpredictable outputs  
-- **Single-page PDF design:** Improves readability and usability  
+1. Clone the repository
 
---------------------------
+```
+git clone https://github.com/Sumarmahadev/Student-Record-Management-System/
+```
 
-## Limitations
+2. Navigate to project folder
 
-- Multilingual PDF rendering not implemented (planned enhancement)
-- No authentication system
-- No department auto-detection
+```
+cd student table 
+```
 
-------------------------------------
+3. Install dependencies
 
-##  Future Enhancements
+```
+npm install
+```
 
--  Multilingual support (Kannada, Hindi, etc.)
--  Voice input support
--  Integration with real AI APIs (Gemini/OpenAI)
--  Automatic department detection
--  RTI request tracking dashboard
+4. Start the development server
+
+```
+npm run dev
+```
 
 ---
 
-##  How to Run
+## Live Project
 
-### Backend
-cd Task
-cd backend
-pip install -r requirements.txt
-python app.py
+Frontend Hosted Link:
 
-#Fontend 
-cd Fontend 
-npm run rev 
+```
+https://recordrapid.netlify.app/
+```
 
+---
 
-Conclusion
+## GitHub Repository
 
-This project focuses on building a simple, reliable, and extensible system rather than a feature-heavy one, aligning with engineering best practices.
+```
+https://github.com/Sumarmahadev/Student-Record-Management-System
+```
+
+---
+
+## Optional Backend (Bonus)
+
+Backend implementation using **NestJS and PostgreSQL** can be added to handle CRUD operations via APIs.
+This part is optional and not required for the assignment.
+
+---
+
+## Author
+
+Developed by **[SUMAR CHIMACODE]**

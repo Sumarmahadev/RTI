@@ -38,7 +38,7 @@ function App() {
       a.download = "rti.pdf";
       a.click();
 
-      // ✅ Reset form after success
+
       setName("");
       setAddress("");
       setIssue("");
@@ -58,14 +58,12 @@ function App() {
       className="min-h-screen flex items-center justify-center bg-cover bg-center relative"
       style={{ backgroundImage: `url(${bgImage})` }}
     >
-      {/* Dark overlay */}
-      <div className="absolute inset-0 bg-black/40"></div>
+          <div className="absolute inset-0 bg-black/40"></div>
 
-      {/* Glass Card */}
       <div className="relative bg-white/10 backdrop-blur-xl p-8 rounded-2xl shadow-2xl w-[350px] border border-white/30">
         
         <h2 className="text-2xl font-bold text-center text-white mb-6">
-          🇮🇳 RTI Generator
+          RTI Generator
         </h2>
 
         <form onSubmit={handleSubmit} className="flex flex-col gap-4">
